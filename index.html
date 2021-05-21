@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+    	google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'USD');
+
+      data.addRows([
+        [0, 0],   [1, 10],  [2, 23],  [3, 17],  [4, 18],  [5, 9],
+        [6, 11],  [7, 27],  [8, 33],  [9, 40],  [10, 32], [11, 35],
+        [12, 30], [13, 40], [14, 42], [15, 47], [16, 44], [17, 48],
+        [18, 52], [19, 54], [20, 42], [21, 55], [22, 56], [23, 57],
+        [24, 60], [25, 50], [26, 52], [27, 51], [28, 49], [29, 53],
+        [30, 55], [31, 60], [32, 61], [33, 59], [34, 62], [35, 65],
+        [36, 62], [37, 58], [38, 55], [39, 61], [40, 64], [41, 65],
+        [42, 63], [43, 66], [44, 67], [45, 69], [46, 69], [47, 70],
+        [48, 72], [49, 68], [50, 66], [51, 65], [52, 67], [53, 70],
+        [54, 71], [55, 72], [56, 73], [57, 75], [58, 70], [59, 68],
+        [60, 64], [61, 60], [62, 65], [63, 67], [64, 68], [65, 69],
+        [66, 70], [67, 72], [68, 75], [69, 80]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Total balance: 29 480 USD'
+        },
+        vAxis: {
+          title: 'Popularity'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+  	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="conteiner df jcsb row mar">
+				<div class="df aic col-2">
+					<p class="vid">
+						monobank |
+					
+					<span class="web">
+						Web
+					</span>
+					</p>
+				</div>
+				<div class="curseFont curse df aic col-3">
+					<span class="pox">
+						<span>USD</span> 
+						<span>27,23</span>
+						<span><img src="img/down.png" alt="erorr"></span>
+					</span>
+					<span class="ml-1 mr-1">\</span>
+					<span class="pox">
+						<span>EUR</span> 
+						<span>32,60</span>
+						<span><img src="img/top.png" alt="erorr"></span>
+					</span>
+					<span class="ml-1 mr-1">\</span>
+					<span class="pox">
+						<span>BTS</span> 
+						<span>250 648</span>
+						<span><img src="img/top.png" alt="erorr"></span>
+					</span>
+				</div>
+				<div class="buttonn buttonFont d-flex col-3 ml-2 jcsb">
+					<a href="">money transfer</a>
+
+					<span id="Border">
+						<a href="">charge phone</a></span>
+					<a href="">replenish card</a>
+				</div>
+				<div class="bokFont df aic col-2">
+					<span class="col">
+						Hello, Nik!
+					</span>
+					<div>
+					<div class="df aic nn">
+						<div class="df aic">
+						  <i class="fa fa-search" aria-hidden="true"></i>
+						  <input type="text">
+						</div>
+						<img src="img/ebuchka.png" alt="">
+					</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<section>
+		<div class="container-fluid df pad">
+			<div class="sidebar">
+				<ul class="sidebar__menu" id="myDIV">
+					<li>
+						<a class=" biton active" href="#">
+							<img src="img/home.png" alt="">
+							<p>
+								Dashboard
+							</p>
+						</a>
+					</li>
+					<li>
+						<a class=" biton " href="#">
+							<img src="img/pie-chart.png" alt="">
+							<p>
+								Transactions
+							</p>
+						</a>
+					</li>
+					<li>
+						<a class=" biton " href="#">
+							<img src="img/id-card.png" alt="">
+							<p>
+								Accounts / Cards
+							</p>
+						</a>
+					</li>
+					<li>
+						<a class=" biton " href="#">
+							<img src="img/copy.png" alt="">
+							<p>
+								Loans / Deposits
+							</p>
+						</a>
+					</li>
+					<li>
+						<a class=" biton " href="#">
+							<img src="img/piggy-bank.png" alt="">
+							<p>
+								Cashback
+							</p>
+						</a>
+					</li>
+					<li>
+						<a class=" biton " href="#">
+							<img src="img/money.png" alt="">
+							<p>
+								Bank services
+							</p>
+						</a>
+					</li>
+					<li class="kosak2">
+						<a href="#">
+							<img src="img/customer-service_copy.png" alt="">
+							<p>
+								Support
+							</p>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="main">
+				<div class="row mar">
+					<div class="col-md-12">
+						<div class="">
+							<div class="cards">
+							<div>
+								<img src="img/card1.png" alt="">
+							</div>
+							<div>
+								<img src="img/card2.png" alt="">
+							</div>
+							<div>
+								<img src="img/card3.png" alt="">
+							</div>
+							<div>
+								<img src="img/card4.png" alt="">
+							</div>
+							<div>
+								<img src="img/card3.png" alt="">
+							</div>
+							<div>
+								<img src="img/card2.png" alt="">
+							</div>
+							<div>
+								<img src="img/card1.png" alt="">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6 ot">
+						<div class="carts kosas">
+							<div class="carts__head df jcsb">
+								<h5>
+									Balance summary
+								</h5>
+								<ul class="carts__menu" id="myDIVK">
+									<li>
+										<a class="bitons actives" href="#">
+											Week
+										</a>
+									</li>
+									<li>
+										<a class="bitons" href="#">
+											Month
+										</a>
+									</li>
+									<li>
+										<a class="bitons" href="#">
+											Year
+										</a>
+									</li>
+									<li>
+										<a class="bitons" href="#">
+											Other
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div style="width: 100%; height: 100%;" id="chart_div">
+								
+							</div>
+						</div>
+						<div class="carts">
+							<div class="carts__head df jcsb">
+								<h5>
+									Expense categories
+								</h5>
+								<ul class="carts__menu" id="myDIVKA">
+									<li>
+										<a class="bitonss activess" href="#">
+											Week
+										</a>
+									</li>
+									<li>
+										<a class="bitonss " href="#">
+											Month
+										</a>
+									</li>
+									<li>
+										<a class="bitonss " href="#">
+											Year
+										</a>
+									</li>
+									<li>
+										<a class="bitonss " href="#">
+											Other
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div id="chartdiv"></div>
+						</div>
+					</div>
+					<div class="col-md-6 ot">
+						<div class="histori">
+							<div class="histori__head df jcsb">
+								<h4 class="histori__title">
+									Transaction history
+								</h4>
+								<ul class="histori__main">
+									<div class="dropdown">
+								    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+								      Any currency
+								    </button>
+								    <div class="dropdown-menu">
+								      <h5 class="dropdown-header">Dropdown header</h5>
+								      <a class="dropdown-item" href="#">Link 1</a>
+								      <a class="dropdown-item" href="#">Link 2</a>
+								      <a class="dropdown-item" href="#">Link 3</a>
+								      <h5 class="dropdown-header">Dropdown header</h5>
+								      <a class="dropdown-item" href="#">Another link</a>
+								    </div>
+								  </div>
+									<div class="dropup">
+								    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+								      All categories
+								    </button>
+								    <div class="dropdown-menu">
+								      <a class="dropdown-item" href="#">Link 1</a>
+								      <a class="dropdown-item" href="#">Link 2</a>
+								    </div>
+								  </div>
+								</ul>
+							</div>
+							<hr>
+							<div class="histori__ul">
+								<div class="histori__ul-31">
+									<h5 class="title">
+										December 31
+									</h5>
+									<ul class="list">
+										<li class="list-li">
+											<div class="list__group">
+												<img src="img/1.png" alt="">
+												<div class="list__text">
+													<h6 class="h6">”Food & Drinks” restaurant</h6>
+													<p class="p">
+														Cafe and restaurants
+														<span class="span">
+															Card: ** 3478
+														</span>
+													</p>
+												</div>
+											</div>
+											<div>
+												<p class="jj">
+													- 480 <span class="lops">UAH</span>
+												</p>
+											</div>
+										</li>
+										<li class="list-li">
+											<div class="list__group">
+												<img src="img/2.png" alt="">
+												<div class="list__text">
+													<h6 class="h6">”Walmart” store (Main Str. 13)</h6>
+													<p class="p">
+														Groceries & food
+														<span class="span">
+															To card: ** 3478
+														</span>
+													</p>
+												</div>
+											</div>
+											<div>
+												<p class="jj">
+													- 80 <span class="lops">USD</span>
+												</p>
+											</div>
+										</li>
+										<li class="list-li">
+											<div class="list__group">
+												<img src="img/3.png" alt="">
+												<div class="list__text">
+													<h6 class="h6">Transfer from <a href="#">Alexey</a></h6>
+													<p class="p">
+														Transactions
+														<span class="span">
+															To card: ** 3478
+														</span>
+													</p>
+												</div>
+											</div>
+											<div>
+												<p class="jj zp">
+													6000 <span class="lops">UAH</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="id" id="news-block">
+									
+								</div>
+								<div class="histori__ul-31">
+									<h5 class="title">
+										December 24
+									</h5>
+									<ul class="list">
+										<li class="list-li">
+											<div class="list__group">
+												<img src="img/6.png" alt="">
+												<div class="list__text">
+													<h6 class="h6">”Shell” gas station (Street Ave. 24)</h6>
+													<p class="p">
+														Cafe and restaurants
+														<span class="span">
+															Card: ** 7324
+														</span>
+													</p>
+												</div>
+											</div>
+											<div class="list__group">
+												<p class="jj">
+													- 280 <span class="lops">EUR</span>
+												</p>
+											</div>
+										</li >
+										<li class="list-li">
+											<div class="list__group">
+												<img src="img/7.png" alt="">
+												<div class="list__text">
+													<h6 class="h6">Phone +380502338325 “Vodafone”</h6>
+													<p class="p">
+														Mobile & internet
+														<span class="span">
+															To card: ** 3478
+														</span>
+													</p>
+												</div>
+											</div>
+											<div>
+												<p class="jj">
+													- 301 <span class="lops">UAN</span>
+												</p>
+											</div>
+										</li>
+										<li class="list-li">
+											<div class="list__group"> 
+												<img src="img/8.png" alt="">
+												<div class="list__text">
+													<h6 class="h6">“General Electric” housing services </span></h6>
+													<p class="p">
+														House and services
+														<span class="span">
+															Card: ** 7813
+														</span>
+													</p>
+												</div>
+											</div>
+											<div>
+												<p class="jj">
+													- 540  <span class="lops">USD</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	
+  	<script src="https://www.amcharts.com/lib/4/core.js"></script>
+	<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+	<script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+	<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  	<script src="slick/slick.js"></script>
+  	<script>
+  		$('.cards').slick({
+  			arrows: false,
+  			slidesToShow: 4,
+  			autoplay: true,
+  			autoplaySpeed: 4000,
+  		});
+  	</script>
+  	<script>
+// Themes begin
+am4core.useTheme(am4themes_material);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+
+// Let's cut a hole in our Pie chart the size of 30% the radius
+chart.innerRadius = am4core.percent(30);
+
+// Put a thick white border around each Slice
+pieSeries.slices.template.stroke = am4core.color("#fff");
+pieSeries.slices.template.strokeWidth = 2;
+pieSeries.slices.template.strokeOpacity = 1;
+pieSeries.slices.template
+  // change the cursor on hover to make it apparent the object can be interacted with
+  .cursorOverStyle = [
+    {
+      "property": "cursor",
+      "value": "pointer"
+    }
+  ];
+
+// Create a base filter effect (as if it's not there) for the hover to return to
+var shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+shadow.opacity = 0;
+
+// Create hover state
+var hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+// Slightly shift the shadow and make it more prominent on hover
+var hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+hoverShadow.opacity = 0.7;
+hoverShadow.blur = 5;
+
+// Add a legend
+chart.legend = new am4charts.Legend();
+
+chart.data = [{
+  "country": "Lithuania",
+  "litres": 501.9
+}, {
+  "country": "Czech Republic",
+  "litres": 301.9
+}, {
+  "country": "Ireland",
+  "litres": 201.1
+}, {
+  "country": "Germany",
+  "litres": 165.8
+}, {
+  "country": "Australia",
+  "litres": 139.9
+}, {
+  "country": "Austria",
+  "litres": 128.3
+}, {
+  "country": "UK",
+  "litres": 99
+}, {
+  "country": "Belgium",
+  "litres": 60
+}, {
+  "country": "The Netherlands",
+  "litres": 50
+}];
+</script>
+	<script>
+	$( document ).ready(function(){
+	  $( ".toggle" ).click(function(){ // задаем функцию при нажатиии на элемент с классомtoggle
+	    $( "div" ).toggle( { // отображаем, или скрываем элементы <div> в документе
+	      duration: 800, // продолжительность анимации
+	      easing: "linear", // скорость анимации
+	      complete: function(){ // callback
+	        console.log("toggle completed");
+	      },
+	      queue: false // не ставим в очередь
+	    });
+	  });
+	  $( ".web" ).click(function(){ // задаем функцию при нажатиии на элемент с классом slide-toggle
+	    $( ".sidebar" ).slideToggle( { // отображаем, или скрываем элементы класа в документе
+	      duration: 800, // продолжительность анимации
+	      easing: "linear", // скорость анимации
+	      complete: function(){ // callback
+	        console.log("slideToggle completed");
+	      },
+	      queue: false // не ставим в очередь
+	    });
+	  });
+	});
+	</script>
+	<script>
+      // Get the container element
+      var liContainer = document.getElementById("myDIVK");
+
+      // Get all buttons with class="btn" inside the container
+      var lis = liContainer.getElementsByClassName("bitons");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < lis.length; i++) {
+          lis[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("actives");
+              current[0].className = current[0].className.replace(" actives", "");
+              this.className += " actives";
+          });
+      }
+  </script>
+  <script>
+      // Get the container element
+      var liContainer = document.getElementById("myDIVKA");
+
+      // Get all buttons with class="btn" inside the container
+      var lis = liContainer.getElementsByClassName("bitonss");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < lis.length; i++) {
+          lis[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("activess");
+              current[0].className = current[0].className.replace(" activess", "");
+              this.className += " activess";
+          });
+      }
+  </script>
+  <script>
+      // Get the container element
+      var liContainer = document.getElementById("myDIV");
+
+      // Get all buttons with class="btn" inside the container
+      var lis = liContainer.getElementsByClassName("biton");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < lis.length; i++) {
+          lis[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+          });
+      }
+  </script>
+  <script>
+  	$("#news-block").ready(function(){
+        
+        for(var i = 0; i<1; i++)
+        {
+
+        	var newsContainer = document.createElement("div");
+            $("#news-block").append(newsContainer);
+            newsContainer.classList.add("histori__ul-31");
+
+            var title = document.createElement('h5');
+            newsContainer.appendChild(title);
+            /*paragraph.classList.add("news-text");*/
+            title.className = 'title';
+            title.innerHTML = 'December 29';
+
+
+            var obj = document.createElement("ul");//create element
+            newsContainer.appendChild(obj);
+            obj.classList.add("list");//add css
+
+
+            var li = document.createElement("li");
+            obj.appendChild(li);
+            li.classList.add("list-li");
+
+
+            var divOne = document.createElement("div")
+            li.appendChild(divOne);
+            divOne.classList.add("list__group");
+
+
+            var img = document.createElement("img")
+            divOne.appendChild(img);
+            img.src = ( "img/4.png" );
+
+
+            var text = document.createElement("div")
+            divOne.appendChild(text);
+            text.classList.add("list__text");
+
+
+            var titleh6 = document.createElement("h6")
+            text.appendChild(titleh6);
+            titleh6.classList.add("h6");
+            titleh6.innerHTML = '"Zara Man” store';
+
+
+            var textcard = document.createElement("p")
+            text.appendChild(textcard);
+            textcard.classList.add("p");
+            textcard.innerHTML = 'Clothes & shoes';
+
+
+            var span = document.createElement("span")
+            textcard.appendChild(span);
+            span.classList.add("span");
+            span.innerHTML = 'Card: ** 7324';
+
+
+
+            var divTwo = document.createElement("div")
+            li.appendChild(divTwo);
+            
+
+            var maone = document.createElement("p")
+            divTwo.appendChild(maone);
+            maone.classList.add("jj");
+            maone.innerHTML = '- 230';
+
+
+            var uan = document.createElement("span")
+            maone.appendChild(uan);
+            uan.classList.add("lops");
+            uan.innerHTML = 'EUR';
+
+
+
+
+
+
+
+            var li = document.createElement("li");
+            obj.appendChild(li);
+            li.classList.add("list-li");
+
+
+            var divOne = document.createElement("div")
+            li.appendChild(divOne);
+            divOne.classList.add("list__group");
+
+
+            var img = document.createElement("img")
+            divOne.appendChild(img);
+            img.src = ( "img/5.png" );
+
+
+            var text = document.createElement("div")
+            divOne.appendChild(text);
+            text.classList.add("list__text");
+
+
+            var titleh6 = document.createElement("h6")
+            text.appendChild(titleh6);
+            titleh6.classList.add("h6");
+            titleh6.innerHTML = 'Replenishment from “iTerminal N861” ';
+
+
+            var textcard = document.createElement("p")
+            text.appendChild(textcard);
+            textcard.classList.add("p");
+            textcard.innerHTML = 'Transactions';
+
+
+            var span = document.createElement("span")
+            textcard.appendChild(span);
+            span.classList.add("span");
+            span.innerHTML = 'Card: ** 3478';
+
+
+
+            var divTwo = document.createElement("div")
+            li.appendChild(divTwo);
+            
+
+            var maone = document.createElement("p")
+            divTwo.appendChild(maone);
+            maone.classList.add("jj");
+            maone.classList.add("zp");
+            maone.innerHTML = '- 230';
+
+
+            var uan = document.createElement("span")
+            maone.appendChild(uan);
+            uan.classList.add("lops");
+            uan.innerHTML = 'EUR';
+            //add obj to div
+
+           /* var newsContainer = document.createElement("div");
+            $("#news-block").append(newsContainer);
+            newsContainer.classList.add("container");
+            newsContainer.classList.add("newsContainers");
+
+            var obj = document.createElement("div");//create element
+            newsContainer.appendChild(obj);
+            obj.classList.add("row");//add css
+            obj.classList.add("row-width");
+         
+            var col3 = document.createElement("div");
+            obj.appendChild(col3);
+            col3.classList.add("col-sm-3");
+            col3.classList.add("news-img-1");
+
+            var col9 = document.createElement("div");
+            obj.appendChild(col9);
+            col9.classList.add("col-sm-9");
+
+            var paragraph = document.createElement("p");
+            col9.appendChild(paragraph);
+            /*paragraph.classList.add("news-text");*/
+           /* paragraph.innerHTML = "Mobile payments product design case study.What I learned.";
+
+
+            var obj2 = document.createElement("div");
+            newsContainer.appendChild(obj2);
+            obj2.classList.add("row");//add css
+            obj2.classList.add("row-width");
+            obj2.classList.add("news-under");
+
+            var col12 = document.createElement("div");
+            obj2.appendChild(col12);
+            col12.classList.add("col-sm-12");
+
+            var time = document.createElement("span");
+            col12.appendChild(time);
+            time.classList.add("left");
+            time.innerHTML="10:33AM";
+
+            var read = document.createElement("span");
+            col12.appendChild(read);
+            read.classList.add("right");
+            
+            var read_a = document.createElement("a");
+            read.appendChild(read_a);
+            read_a.innerHTML="READ>";
+            read_a.onclick = function() {
+    			alert( 'Прийміть лабораторну))' );
+ 			};*/
+        }
+      });
+  </script>
+</body>
+</html>

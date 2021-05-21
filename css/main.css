@@ -1,0 +1,460 @@
+﻿body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	background-color: #2c2c2c;
+	color: #fff;
+}
+p{
+	margin: 0;
+}
+a{
+	color: #8f8f8f;
+}
+a:active{
+	color: #e6686b;
+}
+a:hover{
+	color: #fff;
+	transition: 0.8s;
+	text-decoration: none;
+}
+.df{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.jcsb{
+	justify-content: space-between;
+}
+.aic{
+	align-items: center;
+}
+
+h1{
+	font-family: "Nexa Bold";
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 30px;
+}
+.web{
+	border: none;
+	outline: none;
+	background: #2c2c2c;
+	color: #aaaaaa;
+	font-family: "Nexa Light";
+	font-size: 14px;
+	font-weight: 400;
+}
+.vid{
+	margin: 0px 0px 0px 10px;
+}
+.curse{
+	margin-left: 80px;
+}
+.curseFont {
+	color: #919191;
+	font-family: "Open Sans";
+	font-size: 10px;
+	font-weight: 400;
+	margin: 0 0;
+}
+
+.buttonn{
+	border-radius: 100px;
+	background-color: #363636;
+	margin: 15px 0;
+}
+.buttonFont{
+	color:#ffff00;
+	text-decoration: none;
+	padding: 10px 15px 11px 19px;
+	font-family: "Open Sans";
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.pal:after{
+	content: '';
+    width: 1px;
+    height: 36px;
+    background-color: #2c2c2c;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    margin: 0 0px 0 -16px;
+}
+.pal:before{
+	content: '';
+    width: 1px;
+    height: 36px;
+    background-color: #2c2c2c;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    margin: 0 0 0 102px;
+}
+.bokFont{
+	color: #808080;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+}
+.search 
+{
+    width:40px;
+    margin-top:-12px;
+    position: absolute;
+    left:-50%;
+    padding: 32px 0px 31px 0px;
+}
+
+.search input {
+  
+  border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+  /* растягиваем поле ввода на всю ширину формы */
+  width: 100%;
+
+  /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+   регулируем высоту формы
+   внутренний отступ справа (37px) делаем больше левого,
+   т.к. там будет размещена кнопка отправки  */
+  padding: 8px 37px 9px 15px;
+
+  /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* добавляем внутренние тени */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+
+  /* закругляем углы */
+  border-radius: 20px;
+
+  background: #0b76c9;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;
+  outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+}
+
+/* оформляем кнопку отправки */
+.search .submit {
+  /* позиционируем кнопку абсолютно от правого края формы */
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  width: 35px;
+
+
+  /* растягиваем кнопку на всю высоту формы */
+  height: 100%;
+
+  cursor: pointer;
+  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+
+  /* добавляем прозрачность кнопке отправки */
+  opacity: 0.5;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 0.8;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+ Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+#Border
+{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.non{
+	list-style: none;
+	height: 13px;
+	color: #f6f6f6;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 300;
+}
+.vse{
+	background-color: #373737;
+	height: 100vh;
+}
+.vidimg{
+	padding: 0px 0px 0px 0px;
+}
+.listhover li:hover{
+background-color: red;
+}
+
+.listalcenter1
+{
+	display: flex;
+  	justify-content: center;
+}
+#Border{
+	padding: 0 10px 0 10px ;
+}
+.ot{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.pad{
+	padding: 0;
+}
+.mar{
+	margin: 0;
+}
+.main{
+	width: 90%;
+	background-color: #f3f3f3;
+}
+.histori{
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.03);
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+.histori__head{
+	padding: 30px 27px 20px;
+}
+.histori__main{
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+.histori__main li{
+	margin-left: 30px;
+}
+.histori__ul{
+	padding: 0px 25px 	20px;
+}
+.list{
+	padding: 0;
+	margin: 0;
+}
+.list-li{
+	margin-bottom: 30px;
+	align-items: center;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.list__group{
+	display: flex;
+	align-items: center;
+}
+.list__text{
+	margin-left: 10px;
+}
+.h6{
+	font-weight: 700;
+	color: #515151;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+.list__text a{
+	color: #019fbc;
+	text-decoration: underline;
+}
+.p{
+	color: #999999;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+}
+.span{
+	margin-left: 20px;
+}
+.title{
+	margin: 9px 0 30px;
+	color: #cccccc;
+	font-size: 14px;
+	font-weight: 700;
+}
+.jj{
+	color: #373737;
+	font-size: 20px;
+	font-weight: 700;
+}
+.lops{
+	color: #999999;
+	font-size: 12px;
+	margin-left: 6px;
+}
+.zp{
+	color: #39b54a;
+}
+.sidebar{
+	box-shadow: inset -14px 0 10px rgba(0, 0, 0, 0.08);
+	background-color: #373737;
+	width: 10%;
+}
+.sidebar__menu{
+	padding: 0;
+	margin: 50px 0 0 0;
+}
+.sidebar__menu{
+	text-align: center;
+	list-style: none;
+}
+.sidebar__menu li{
+	transition: 0.8s;
+}
+.sidebar__menu li:hover{
+	transition: 0.8s;
+	background-color: #3d3d3d;
+}
+.sidebar__menu li a{
+	display: block;
+	text-decoration: none;
+	padding: 17px 0 23px;
+}
+.sidebar__menu li a p{
+	margin-top: 15px;
+}
+.kosas{
+	margin-bottom: 30px;
+}
+.carts{
+	padding: 30px 25px;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.03);
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+.carts__menu{
+	display: flex;
+	list-style: none;
+}
+.carts__menu li{
+	margin-left: 30px;
+}
+.carts__menu li a{
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+.cards{
+	width: auto;
+	margin-top: 50px;
+}
+#chartdiv {
+  width: 100%;
+  height: 450px;
+}
+.kosak2{
+	margin-top: 200px;
+}
+
+
+input {
+	height: 30px;
+	border: none;
+	  width: 46px;
+	  background: #363636;
+	  outline: none;
+	  border-top-left-radius: 40px;
+	  border-bottom-left-radius: 40px;
+}
+
+i.fa {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: -26px;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+.nn img{
+	margin-left: -10px;
+}
+.carts__head h5{
+	color: #373737;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.actives{
+	color: #e6686b;
+    border-bottom:3px solid #e6686b;
+    padding-bottom: 4px;
+}
+
+.bitons {
+	padding-left: 14px;
+	padding-right: 14px;
+    cursor: pointer;
+    outline: none;
+}
+.activess{
+	color: #e6686b;
+    border-bottom:3px solid #e6686b;
+    padding-bottom: 4px;
+}
+
+.bitonss {
+	padding-left: 14px;
+	padding-right: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.active{
+	position: relative;
+	transition: 0.8s;
+	background: #3d3d3d;
+	color: #fff;
+    //*border-left:3px solid #ffc107;*//
+}
+.active:after{
+	position: absolute;
+	transform: rotate(45deg);
+	display: block;
+	background: #f3f3f3;
+	content: '';
+	width: 15px;
+	height: 15px;
+	top: 45px;
+    right: -10px;
+}
+.biton {
+    cursor: pointer;
+    outline: none;
+}
+.histori__title{
+	margin: 0;
+}
+.histori__main{
+	margin: 0;
+}
+.btn{
+	color: #808080;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+	background-color: #fff;
+	border: none;
+	outline: none;
+}
+hr{
+	margin: 0 30px;
+	
+	height: 1px;
+}
+.dropup{
+	margin-left: 10px;
+}
